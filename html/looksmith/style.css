@@ -1,0 +1,29 @@
+:root{
+  --overlay: rgba(0,0,0,0.55);
+  --panel-bg: linear-gradient(180deg,#0f1720,#071018);
+  --muted: #9aa6b2;
+  --text: #e6eef3;
+  --accent: #1e90ff;
+  --success: #10b981;
+  --warn: #f59e0b;
+  --radius: 12px;
+  --width: 720px;
+}
+
+.hidden { display:none !important; }
+#nuiOverlay { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:var(--overlay); z-index:9999; padding:20px; }
+#app { width:var(--width); max-width:94%; background:var(--panel-bg); border-radius:var(--radius); padding:16px; color:var(--text); box-shadow:0 12px 40px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.04); }
+header { display:flex; justify-content:space-between; align-items:center; }
+header h1 { margin:0; font-size:20px; }
+.btn { background:rgba(255,255,255,0.04); color:var(--text); border:none; padding:6px 10px; border-radius:8px; cursor:pointer; }
+.info { color:var(--muted); font-size:13px; margin:8px 0; }
+.list { display:flex; flex-direction:column; gap:10px; max-height:360px; overflow:auto; padding-right:6px; margin-top:8px; }
+.keyItem { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px; border-radius:8px; background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03); }
+.keyLeft { display:flex; flex-direction:column; }
+.keyPlate { font-weight:700; font-size:16px; }
+.keyLabel { color:var(--muted); font-size:13px; }
+.keyActions { display:flex; gap:8px; align-items:center; }
+.smallBtn { padding:6px 10px; border-radius:6px; border:none; cursor:pointer; color:#fff; font-weight:600; }
+.dupBtn { background:var(--success); }
+.giveBtn { background:var(--warn); }
+footer { margin-top:12px; color:var(--muted); text-align:center; font-size:12px; }

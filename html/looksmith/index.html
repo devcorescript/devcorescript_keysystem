@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Schlüsseldienst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="nuiOverlay" class="hidden">
+    <div id="app" role="dialog" aria-modal="true" aria-label="Schlüsseldienst">
+      <header>
+        <h1>Schlüsseldienst</h1>
+        <button id="closeBtn" class="btn small">Schließen</button>
+      </header>
+
+      <main>
+        <section class="info">
+          <p>Du kannst Schlüssel duplizieren oder an Spieler in der Nähe übergeben.</p>
+          <p>Duplikat-Kosten: <span id="cost">0</span> $</p>
+        </section>
+
+        <section id="keysList" class="list" aria-live="polite"></section>
+      </main>
+
+      <footer>
+        <small>Schlüsseldienst — Sicher & Server-geprüft</small>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
